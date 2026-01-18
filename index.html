@@ -210,6 +210,22 @@
       const featureModalBody = document.getElementById("featureModalBody");
       const featureModalClose = document.querySelector(".feature-modal-close");
 
+      const preloadFeatureImages = () => {
+        const sources = new Set(
+          featureItems.map((item) => item.dataset.image).filter(Boolean)
+        );
+        sources.forEach((src) => {
+          const img = new Image();
+          img.src = src;
+        });
+      };
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", preloadFeatureImages);
+      } else {
+        preloadFeatureImages();
+      }
+
       featureItems.forEach((item) => {
         item.addEventListener("click", () => {
           featureItems.forEach((el) => {
