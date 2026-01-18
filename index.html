@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quant Manager — Risk Controls for Quantower</title>
+    <meta name="description" content="Quant Manager is a Quantower plugin for account oversight, risk enforcement, scheduled flattening, and formula-driven metrics." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="logo">Quant Manager</div>
+        <nav class="nav-links">
+          <a href="#features">Features</a>
+          <a href="./pricing.html">Pricing</a>
+          <a href="./setup.html">Setup</a>
+          <a href="./faq.html">FAQs</a>
+        </nav>
+        <a class="btn" href="https://ldqtrading.gumroad.com/l/tpsplugin" target="_blank" rel="noreferrer">Get Access</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero fade-section">
+        <div>
+          <div class="pill-row">
+            <span class="pill">Quantower plugin</span>
+            <span class="pill">Risk automation</span>
+            <span class="pill">Account oversight</span>
+          </div>
+          <h1>Risk controls, insights, and automation for Quantower accounts.</h1>
+          <p>
+            Quant Manager is a powerful Quantower plugin designed to give traders complete visibility and control over multiple accounts. 
+            It combines a clean, consolidated dashboard with automated risk enforcement tools—helping you protect capital, stay compliant 
+            with rules, and trade with confidence.
+          </p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a class="btn secondary" href="https://ldqtrading.gumroad.com/l/tpsplugin" target="_blank" rel="noreferrer">Visit Main Site</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="./assets/hero-dashboard.png" alt="Quant Manager dashboard screenshot" />
+          <small>Add pic (remove this text.)</small>
+        </div>
+      </section>
+
+      <section id="features" class="section fade-section">
+        <h2 class="features-heading">Features</h2>
+        <div class="feature-split">
+          <div class="feature-image">
+            <img
+              id="featureImage"
+              src="./assets/qmwhole.PNG"
+              alt="Unified Account Dashboard"
+            />
+          </div>
+          <div class="feature-list" role="tablist" aria-label="Feature list">
+            <button
+              class="feature-item is-active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              data-image="./assets/qmwhole.PNG"
+              data-alt="Unified Account Dashboard"
+              data-description="View all accounts in one dashboard with both a high-level summary and a detailed table. Monitor equity, P&amp;L, drawdown, lock status, and grouped accounts for quick comparison and aggregation."
+            >
+              <span class="feature-title">Unified Account Dashboard</span>
+              <span class="feature-description">View all accounts in one dashboard with both a high-level summary and a detailed table. Monitor equity, P&amp;L, drawdown, lock status, and grouped accounts for quick comparison and aggregation.</span>
+            </button>
+            <button
+              class="feature-item"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-image="./assets/qmeditacc.PNG"
+              data-alt="Per-account configuration panel"
+              data-description="Individually configure each account with firm/type classification, risk limits, trailing rules, formulas, and scheduled flatten times. Changes save automatically and update the dashboard in real time."
+            >
+              <span class="feature-title">Per-Account Configuration Panel</span>
+              <span class="feature-description">Individually configure each account with firm/type classification, risk limits, trailing rules, formulas, and scheduled flatten times. Changes save automatically and update the dashboard in real time.</span>
+            </button>
+            <button
+              class="feature-item"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-image="./assets/qmlockaction.png"
+              data-alt="Click flatten action"
+              data-size="compact"
+              data-description="Instantly flatten positions or lock accounts from the toolbar or context menu. Apply actions to single or multiple accounts to respond quickly to risk events or rule violations."
+            >
+              <span class="feature-title">One-Click Flatten &amp; Lock Actions</span>
+              <span class="feature-description">Instantly flatten positions or lock accounts from the toolbar or context menu. Apply actions to single or multiple accounts to respond quickly to risk events or rule violations.</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section enforcement-section fade-section">
+        <h2 class="enforcement-heading">Define the Rules. We Enforce Them.</h2>
+        <div class="section-toggle" role="tablist" aria-label="Control sections">
+          <button class="toggle-btn is-active" type="button" role="tab" aria-selected="true" data-panel="enforcement">
+            Automated Risk Enforcement
+          </button>
+          <button class="toggle-btn" type="button" role="tab" aria-selected="false" data-panel="advanced">
+            Advanced Controls &amp; Automation
+          </button>
+        </div>
+        <div class="toggle-panel is-active" data-panel="enforcement">
+          <p class="muted">Protect accounts with deterministic rules that run every session.</p>
+          <div class="feature-grid">
+            <button
+              class="mini-feature"
+              type="button"
+              data-title="Profit Target/Loss Limit Enforcement"
+              data-full="If a profit target is hit or the loss limit is breached, the account is immediately flattened and locked for the remainder of the day."
+            >
+              <strong>Profit Target/Loss Limit Enforcement</strong>
+              <span>Auto-flatten and lock when targets or limits are hit.</span>
+            </button>
+            <button
+              class="mini-feature"
+              type="button"
+              data-title="Trailing Balance Protection"
+              data-full="Enable custom trailing balance rules based on realized or unrealized P&amp;L. When the trailing threshold is crossed, the account is locked for a configurable duration, helping protect gains as equity grows."
+            >
+              <strong>Trailing Balance Protection</strong>
+              <span>Lock accounts when trailing thresholds are crossed.</span>
+            </button>
+            <button
+              class="mini-feature"
+              type="button"
+              data-title="Timed &amp; Session-Based Locks"
+              data-full="Lock accounts until a specific time or for predefined session durations. Optional auto-flattening ensures no positions remain open when a lock activates."
+            >
+              <strong>Timed &amp; Session-Based Locks</strong>
+              <span>Lock accounts for set times or sessions.</span>
+            </button>
+          </div>
+        </div>
+        <div class="toggle-panel" data-panel="advanced">
+          <p class="muted">Customize controls, schedules, and automation for every account.</p>
+          <div class="feature-grid">
+            <button
+              class="mini-feature"
+              type="button"
+              data-title="Scheduled Flattening"
+              data-full="Schedule accounts to flatten at a specific date and time. The scheduler runs automatically and updates future flatten events after execution."
+            >
+              <strong>Scheduled Flattening</strong>
+              <span>Schedule automatic account flattening.</span>
+            </button>
+            <button
+              class="mini-feature"
+              type="button"
+              data-title="Formula-Driven Metrics"
+              data-full="Customize how key metrics are calculated using editable formulas (e.g., [openpnl], IF(), MAX(), MIN()). Define your own logic for Open, Closed, and Total P&amp;L, drawdown, and trailing balance calculations."
+            >
+              <strong>Formula-Driven Metrics</strong>
+              <span>Define custom P&amp;L and drawdown logic.</span>
+            </button>
+            <button
+              class="mini-feature"
+              type="button"
+              data-title="Templates &amp; Bulk Apply"
+              data-full="Create templates that bundle classifications, limits, and formulas. Apply them to multiple accounts at once via the context menu for fast, consistent setup across all accounts."
+            >
+              <strong>Templates &amp; Bulk Apply</strong>
+              <span>Apply bundled settings across accounts.</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section callout fade-section">
+        <h2>Ready for a deeper look?</h2>
+        <p class="muted">
+          View pricing and setup instructions before going live.
+        </p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:12px;">
+          <a class="btn hover-accent" href="./pricing.html">Pricing</a>
+          <a class="btn secondary hover-accent" href="./setup.html">Setup Guide</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div>Quant Manager — Quantower plugin for risk controls and account oversight.</div>
+        <div class="muted">© 2026 Quant Manager. All rights reserved.</div>
+      </div>
+    </footer>
+    <div class="feature-modal" aria-hidden="true">
+      <div class="feature-modal-card" role="dialog" aria-modal="true" aria-labelledby="featureModalTitle">
+        <button class="feature-modal-close" type="button" aria-label="Close modal">×</button>
+        <h3 id="featureModalTitle">Feature</h3>
+        <p id="featureModalBody"></p>
+      </div>
+    </div>
+    <script>
+      const featureItems = Array.from(document.querySelectorAll(".feature-item"));
+      const featureImage = document.getElementById("featureImage");
+      const featureImageWrap = document.querySelector(".feature-image");
+      const toggleButtons = Array.from(document.querySelectorAll(".toggle-btn"));
+      const togglePanels = Array.from(document.querySelectorAll(".toggle-panel"));
+      const miniFeatures = Array.from(document.querySelectorAll(".mini-feature"));
+      const featureModal = document.querySelector(".feature-modal");
+      const featureModalTitle = document.getElementById("featureModalTitle");
+      const featureModalBody = document.getElementById("featureModalBody");
+      const featureModalClose = document.querySelector(".feature-modal-close");
+
+      featureItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          featureItems.forEach((el) => {
+            el.classList.remove("is-active");
+            el.setAttribute("aria-selected", "false");
+          });
+          item.classList.add("is-active");
+          item.setAttribute("aria-selected", "true");
+          featureImage.src = item.dataset.image;
+          featureImage.alt = item.dataset.alt;
+          featureImageWrap.classList.toggle("is-compact", item.dataset.size === "compact");
+        });
+      });
+
+      toggleButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          toggleButtons.forEach((el) => {
+            el.classList.remove("is-active");
+            el.setAttribute("aria-selected", "false");
+          });
+          togglePanels.forEach((panel) => panel.classList.remove("is-active"));
+          button.classList.add("is-active");
+          button.setAttribute("aria-selected", "true");
+          const target = button.dataset.panel;
+          const panel = togglePanels.find((item) => item.dataset.panel === target);
+          if (panel) {
+            panel.classList.add("is-active");
+          }
+        });
+      });
+
+      const openFeatureModal = (title, body) => {
+        featureModalTitle.textContent = title;
+        featureModalBody.textContent = body;
+        featureModal.classList.add("is-open");
+        featureModal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("modal-open");
+      };
+
+      const closeFeatureModal = () => {
+        featureModal.classList.remove("is-open");
+        featureModal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("modal-open");
+      };
+
+      miniFeatures.forEach((item) => {
+        item.addEventListener("click", () => {
+          openFeatureModal(item.dataset.title, item.dataset.full);
+        });
+      });
+
+      featureModalClose.addEventListener("click", closeFeatureModal);
+      featureModal.addEventListener("click", (event) => {
+        if (event.target === featureModal) {
+          closeFeatureModal();
+        }
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && featureModal.classList.contains("is-open")) {
+          closeFeatureModal();
+        }
+      });
+
+      const fadeSections = document.querySelectorAll(".fade-section");
+      if ("IntersectionObserver" in window) {
+        const fadeObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              entry.target.classList.toggle("is-visible", entry.isIntersecting);
+            });
+          },
+          { threshold: 0.25, rootMargin: "0px 0px -10% 0px" }
+        );
+        fadeSections.forEach((section) => fadeObserver.observe(section));
+      } else {
+        fadeSections.forEach((section) => section.classList.add("is-visible"));
+      }
+    </script>
+  </body>
+</html>
+
